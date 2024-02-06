@@ -90,7 +90,8 @@
             @Html.ActionLink("Contenido","Contenido","Home")
           </li>
           <li class="nav-item">
-            @Html.ActionLink("Vista persona","VistaPersona","Home")
+              <a asp-controller="Home" asp-action="VistaPersona" class="nav-link">Vista Persona</a>
+            @* @Html.ActionLink("Vista persona","VistaPersona","Home") *@
           </li>
         </ul>
         <form class="d-flex" role="search">
