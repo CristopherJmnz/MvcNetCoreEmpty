@@ -1,0 +1,32 @@
+﻿@section imagenhome{
+    <img src="~/images/openai-logo.jpg" style="width:150px; height:150px" />
+}
+
+
+@section styles{
+    <style>
+        button {
+            color:red;
+        }
+    </style>
+    
+}
+
+
+<div class="container d-flex flex-column">
+    <h4 style="color:darkcyan" id="mensajeVista">
+        Estoy en el HOME
+    </h4>
+    <button id="botonVista">Mesaje en la view Index</button>
+</div>
+
+
+@section scripts{
+    <script>
+        $(document).ready(() => {
+            $("#botonVista").click(() => {
+                $("#mensajeVista").text("Nuevo mensaje con JQUERYYY EN VIEW INDEXX")
+            })
+        })
+    </script>
+}
